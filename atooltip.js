@@ -1,4 +1,3 @@
-
 $(document).ready(function()
 {
 	$('.atooltip').on('mousedown',function(e) // quand on clique sur un element de classe "atooltip"
@@ -109,7 +108,7 @@ $(document).ready(function()
 		$(this).next( ".helpbox" ).css({
 			top: y,
 			left: x
-		}); // positionner la bite à outils
+		}); // positionner la boite à outils
 		$(this).next( ".helpbox" ).fadeToggle(500); // faire apparaitre ou disparaitre la boite à outils avec un effet de fondu qui dure 500ms
 	});
 	
