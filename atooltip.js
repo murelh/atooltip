@@ -2,7 +2,7 @@ $(document).ready(function()
 {
 	$('.atooltip').on('mousedown',function(e) // quand on clique sur un element de classe "atooltip"
 	{
-		var elem = $(this); // copier cet objet de classe "atootip" dans la variable "elem"
+		var elem = $(this); // copier cet objet de classe "atooltip" dans la variable "elem"
 		var event = e; // copier l'evenement dans la variable "event"
 		
 		/*
