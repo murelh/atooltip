@@ -117,7 +117,7 @@ $(document).ready(function()
 		Conseils d'utilisation:
 		
 		Integrez ce code dans une balise script au plus bas de votre page html
-		Les liens qui doivent être affecté par le script doivent avoir la classe "atootip"
+		Les liens qui doivent être affectés par le script doivent avoir la classe "atooltip"
 		Tout les autres element qui doivent être affectés par le script doivent avoir la classe "have_tooltip"
 		
 		Chaque boite à outil doit avoir la classe "helpbox" (à moins de modifier le script)
