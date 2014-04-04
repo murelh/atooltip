@@ -20,15 +20,15 @@ $(document).ready(function()
 			
 			/*
 				POSITIONNEMENT DE LA BOITE A OUTIL PAR RAPPORT A LA SOURIS
-				Cette partie de code on récupère la posiiton de la souris par rapport à l'émément
+				Dans cette partie de code on récupère la posiiton de la souris par rapport à l'émément
 				sur lequel nous avons cliqué.
-				Cruement, la position de souris suivant des coordonnées (x,y) seront event.pageX, event.pageY
-				En fonction de l'endorit où la boite à outil doit s'afficher, ce calcul peut être
+				Cruement, les coordonnées de la souris sont event.pageX, event.pageY
+				En fonction de l'endroit où la boite à outil doit s'afficher, ce calcul peut être
 				inutile.
-				Dans cet exemple, on fait en sorte que les bords de la boite à outil soit horizontalement
-				à égal distance de la souris
-				et que verticalement elle se trouve 45 pixel au dessus du pointeur de la souris.
-				La boite à outil est en position absolute
+				
+				Dans cet exemple, on fait en sorte que les bords de la boite à outil soit à égales distances de la souris sur l'axe horizontal
+				et qu'elle se trouve 45 pixels au dessus du pointeur de la souris.
+				(La boite à outil doit donc être en position absolute)
 			*/
 			var x = event.pageX-(event.pageX/4);
 			var y = event.pageY-(45)-(elem.next( ".helpbox" ).height());
