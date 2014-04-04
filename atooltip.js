@@ -68,7 +68,7 @@ $(document).ready(function()
 				var b = setTimeout(function()
 				{
 					// les actions dans ces accolades ne s'excuteront qu'au bout d'un certain temps (ici 500ms)
-					elem.attr('href', elem.attr('nohref')); // créer l'attribut "href" sr notre element et lui donner la valeur de "nohref" que nous avions créer plus tot.
+					elem.attr('href', elem.attr('nohref')); // créer l'attribut "href" sur notre element et lui donner la valeur de "nohref" que nous avions créer plus tot.
 					elem.removeAttr('nohref'); // supprimer l'attribut nohref
 					clearTimeout(b); // supprimer le timer b (le timer s'efface lui même)
 				},
@@ -81,8 +81,8 @@ $(document).ready(function()
 	
 	
 	/*
-		Pour résumé:
-			Au clic sur un element on declanche un timer a au bout duquel
+		Pour résumer:
+			Au clic sur un element on declenche un timer a au bout duquel
 				on affichera une tooltip
 				on supprimera le lien sur cet element
 			
