@@ -31,7 +31,7 @@ $(document).ready(function()
 				(La boite à outil doit donc être en position absolute)
 			*/
 			var x = event.pageX-(event.pageX/4);
-			var y = event.pageY-(45)-(elem.next( ".helpbox" ).height());
+			var y = event.pageY-(45)-(elem.next( ".helpbox" ).outerHeight());
 			elem.next( ".helpbox" ).css({
 				top: y,
 				left: x
@@ -104,7 +104,7 @@ $(document).ready(function()
 	$('.have_helpbox').dblclick(function(event) // au double clique
 	{
 		var x = event.pageX-(event.pageX/4);
-		var y = event.pageY-(45)-($(this).next( ".helpbox" ).height());
+		var y = event.pageY-(45)-($(this).next( ".helpbox" ).outerHeight());
 		$(this).next( ".helpbox" ).css({
 			top: y,
 			left: x
