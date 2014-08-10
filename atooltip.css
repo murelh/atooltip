@@ -1,0 +1,23 @@
+.helpbox
+{
+	/* important  */
+	position:absolute;
+	display:none;
+	/* personnalisation */
+	width:20em;
+	max-width:40%;
+	max-height:10em;
+	background:rgba(241,234,216,0.9);
+	color: rgb(51,41,41);
+	padding:1.5em;
+	font-style:italic;
+	font-size:small;	
+	border:0.2em solid rgb(51,41,41);
+	border-radius:0.2em;
+	box-shadow:0em 0em 0.2em rgba(51,41,41,0.75), inset 0em 0em 0.2em rgba(51,41,41,0.5);
+	overflow:auto;
+}
+.helpbox img
+{
+	max-width:100%;
+}
