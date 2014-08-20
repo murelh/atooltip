@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-	$('.atooltip').on('mousedown',function(e) // quand on clique sur un element de classe "atooltip"
+	$('.have_helpbox').on('mousedown',function(e) // quand on clique sur un element de classe "atooltip"
 	{
 		var elem = $(this); // copier cet objet de classe "atooltip" dans la variable "elem"
 		var event = e; // copier l'evenement dans la variable "event"
@@ -113,17 +113,22 @@ $(document).ready(function()
 	});
 	
 	
+$('.helpbox .close').click(function()
+{
+	$(this).parent().fadeToggle(500);
+});
 	/*
 		Conseils d'utilisation:
 		
 		Integrez ce code dans une balise script au plus bas de votre page html
-		Les liens qui doivent être affectés par le script doivent avoir la classe "atooltip"
-		Tout les autres element qui doivent être affectés par le script doivent avoir la classe "have_tooltip"
+		Les élément qui voivent être  doivent avoir la classe "have_helpbox"
 		
-		Chaque boite à outil doit avoir la classe "helpbox" (à moins de modifier le script)
+		Chaque boite à outil doit avoir la classe "helpbox"
 		Chaque boite à outil doit se trouver dans le même conteneur et juste après l'élément auquel il est associé (important)
 		Dans votre css, la classe "helpbox" doit être en position absolute et display none
-	
+		
+		Vous pouvez ajouter un bouton de fermeture de la boite de dialogue en ui donnant la classe "close".
+		Ce bouton doit avoir comme parent l'élément de classe "helpbox qu'il est censé fermer.
 	*/
 	
 	
